@@ -59,10 +59,14 @@ def largest_contiguous_subsum_good(arr)
             current_max = num
         else
             current_max = temp_sum
-        end        
+        end
     end
     last_max
 end
+
+list1 = [5, 3, -7]
+list2 = [2, 3, -6, 7, -6, 7]
+list3 = [-5, -1, -3]
 
 p largest_contiguous_subsum_good(list1)
 p largest_contiguous_subsum_good(list2)
