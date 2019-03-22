@@ -18,6 +18,7 @@ end
 def second_anagram?(word1, word2) 
     # is O(n^2) because loop + slice
     word1.each_char do |char|
+        # return false unless idx
         return false unless word2.include?(char)
         idx = word2.index(char)
         word2 = word2[0...idx] + word2[idx + 1..-1]
